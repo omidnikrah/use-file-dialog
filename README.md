@@ -1,4 +1,4 @@
-# Use File Dialog
+# React `useFileDialog` hook
 [![NPM](https://img.shields.io/npm/v/use-file-dialog.svg)](https://www.npmjs.com/package/use-file-dialog)
 
 
