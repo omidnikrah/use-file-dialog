@@ -1,0 +1,40 @@
+{
+  "name": "use-file-dialog",
+  "version": "1.0.0",
+  "description": "Open file dialog without struggling with file input using useFileDialog react hook",
+  "main": "dist/index.js",
+  "module": "dist/use-file-dialog3.esm.js",
+  "typings": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "import": "./dist/use-file-dialog3.esm.js",
+      "require": "./dist/index.js"
+    }
+  },
+  "keywords": ["react", "react-hook", "javascript", "useFileDialog", "hooks"],
+  "scripts": {
+    "dev": "tsdx watch",
+    "build": "tsdx build"
+  },
+  "files": ["dist"],
+  "author": "Omid Nikrah",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "parcel-bundler": "^1.12.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "tsdx": "^0.14.1",
+    "typescript": "^4.1.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.3",
+    "react-dom": ">=16.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/omidnikrah/use-file-dialog.git"
+  }
+}
