@@ -12,12 +12,16 @@ const DEFAULT_OPTIONS: Options = {
 
 const useFileDialog = (
 	onSelectFile?: (files: FileList) => void,
-	options?: Options,
+	options?: Partial<Options>,
 ) => {
 	const [files, setFiles] = useState<FileList | null>(null);
 
-	const openFileDialog = (localOptions?: Options) => {
-		const _options = { ...DEFAULT_OPTIONS, ...options, ...localOptions };
+	const openFileDialog = (localOptions?: Partial<Options>) => {
+		const _options: Options = {
+			...DEFAULT_OPTIONS,
+			...options,
+			...localOptions,
+		};
 		const input = document.createElement('input');
 		input.type = 'file';
 		input.multiple = _options.multiple;
