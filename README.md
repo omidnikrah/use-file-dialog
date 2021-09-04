@@ -29,7 +29,7 @@ function App() {
   console.log(files);
 
   return (
-    <button onClick={openFileDialog}>Choose file</button>
+    <button type='button' onClick={openFileDialog}>Choose file</button>
   );
 }
 ```
